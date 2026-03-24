@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* GLASS BOX */
+.box {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    width: 320px;
+    margin: 120px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+/* INPUT */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #00c6ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #0072ff;
+}
+
+/* DASHBOARD */
+.menu {
+    margin-top: 50px;
+}
+
+.menu button {
+    width: 220px;
+    margin: 10px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* TABLE */
+table {
+    margin: 40px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: rgba(0,0,0,0.3);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
